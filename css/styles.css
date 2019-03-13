@@ -1,0 +1,132 @@
+/*
+Copyright JL Hoover
+*/
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #505050;
+    text-decoration: none;
+}
+
+header {
+    background-color: #fafafa;
+}
+
+header img {
+    max-width: 60%;
+    padding-top: 1.5em;
+}
+
+header p {
+    font-weight: 100;
+    color: lightslategrey;
+    padding-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+h1 {
+    padding-top: 1em;
+    font-size: 1.6em;
+    color: #606060
+}
+
+ul {
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: 14px;
+    width: 95%;
+}
+
+li {
+    list-style: none;
+    text-transform: uppercase;
+    background-color: white;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: .9em;
+    text-transform: uppercase;
+    padding-bottom: 2em;
+    padding-top: 1.5em;
+
+}
+h3 {
+    font-weight: normal;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+h4 {
+    margin-top: 48px;
+    padding-top: 48px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.5;
+    font-weight: 100;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+img {
+    max-width: 85%;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: #fafafa;
+}
+
+footer p {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.phoneAndEmail {
+    font-weight: bold;
+    color: #808080;
+    padding-left: 1em;
+}
+
+.ruler {
+    border: .5px solid lightgrey;
+    width: 90%;
+    margin-top: 4em;
+}
+
+.bottom-nav li{
+    color: #606060;
+    background-color: #fafafa;
+    font-weight: bold;
+    text-transform: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.name {
+    float: left;
+    padding: 0;
+}
+
+.btt {
+    font-size: .9em;
+    float: right;
+    padding: 0;
+    margin-right: -8px;
+}
+
+.bottom-nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
