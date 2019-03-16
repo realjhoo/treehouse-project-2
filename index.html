@@ -2,78 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>TITLE</title>
+    <title>project 2 - Responsive Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700, 800, 900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
   </head>
 
   <body>
     <header>
+      <div class="top-nav1024">
       <h1 id="top">Student Name</h1>
-      <nav>
+      <nav class="top-nav">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <img src="images/responsive-layout-profile.png" alt="A picture of me (not)">
-      <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+</div>
+      <div class="profile">
+        <img src="images/responsive-layout-profile.png" alt="A picture of me (not)">
+        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+      </div>
     </header>
-    
+
     <h2 id="portfolio">Portfolio</h2>
 
-    <img src="images/portfolio-1.png" alt="Blue marketing box">
+    <div class="portfolio-wrapper">
+      <div class="col-left col-left1024">
+        <img src="images/portfolio-1.png" alt="Blue marketing box">
+        <h3>Marketing Page</h3>
+        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+      </div>
 
-    <h3>Marketing Page</h3>
+      <div class="col-right col-mid1024">
+        <img src="images/portfolio-2.png" alt="Yellow search page box">
+        <h3>Search Page</h3>
+        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+      </div>
 
-    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+      <div class="col-left col-right1024">
+        <img src="images/portfolio-3.png" alt="Blue travel app box">
+        <h3>Travel App</h3>
+        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+      </div>
 
-    <img src="images/portfolio-2.png" alt="Yellow search page box">
+      <div class="col-right col-left1024">
+        <img src="images/portfolio-4.png" alt="Greenish map box">
+        <h3>Map of Favorite Spots</h3>
+        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+      </div>
 
-    <h3>Search Page</h3>
-    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+      <div class="col-left col-mid1024">
+        <img src="images/portfolio-5.png" alt="Purple photo gallery box">
+        <h3>Photo Gallery</h3>
+        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+      </div>
 
-    <img src="images/portfolio-3.png" alt="Blue travel app box">
+      <div class="col-right col-right1024">
+        <img src="images/portfolio-6.png" alt="Borimng grey calculator box">
+        <h3>Calculator</h3>
+        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+      </div>
+    </div> <!-- portfolio-wrapper -->
 
-    <h3>Travel App</h3>
+    <div class="clearfix">
+      <div class="skills">
+      <h2 id="skills">Skills</h2>
+        <p>As a front-end developer, I have the some very imporatnt skills. Most importantly, I have the skill to add this section, with out causing the footer div to totally collapse and create a really big headache. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium et maiores doloremque debitis cumque exercitationem quasi in fugit officiis asperiores reiciendis expedita mollitia omnis magnam deserunt magni, eos maxime nesciunt?</p>
+        <p> Also, I have the skill of using flexbox on the navigation, but having the sense to use float for the main body of the portfolio. And I know how to lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum ad tempore molestiae deserunt maxime natus sed nihil fugit commodi, enim recusandae, earum provident odio, sapiente perferendis impedit obcaecati esse. </p>
+      </div> <!-- skills div -->
 
-    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-
-    <img src="images/portfolio-4.png" alt="Greenish map box">
-
-    <h3>Map of Favorite Spots</h3>
-
-    <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-
-    <img src="images/portfolio-5.png" alt="Purple photo gallery box">
-
-    <h3>Photo Gallery</h3>
-
-    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-
-    <img src="images/portfolio-6.png" alt="Borimng grey calculator box">
-
-    <h3>Calculator</h3>
-
-    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-
-    <footer>
+      <footer>
         <h4 id="contact">Contact</h4>
-        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+          <p class="contact-blurb">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 
-        <p>Phone <span class="phoneAndEmail">+1 (111) 555-1234</p></span>
-        <p>Email <a class="phoneAndEmail">email@yoursite.com</p></a>
+          <p>Phone <span class="phoneAndEmail">+1 (111) 555-1234</span></p>
+          <p>Email <a class="phoneAndEmail">email@yoursite.com</a></p>
 
-        <hr class="ruler">
+          <hr class="ruler">
 
-        <span class="bottom-nav">
-          <ul>
-            <li class="name">Student name</li>
-            <li class="btt"><a href="#">BACK TO TOP</a></li>
-          </ul>
-        </span>
-    </footer>
+          <nav class="bottom-nav"> <!-- small screen bottom menu -->
+            <ul>
+              <li class="bottom-name">Student name</li>
+              <li class="btt"><a href="#">BACK TO TOP</a></li>
+            </ul>
+          </nav>
+
+          <nav class="bottom-nav768"> <!-- lg and med screen bottom menu -->
+            <p class="bottom-name768">Student name</p>
+            <ul class="bottom-nav768">
+              <li><a href="#">Home</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+      </footer>
+    </div> <!-- clearfix div -->
   </body>
 </html>
