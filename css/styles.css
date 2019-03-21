@@ -35,7 +35,6 @@ h1 {
 }
 
 .top-nav ul {
-    padding-right: 1em;
     padding-left: 1em;
     font-size: 14px;
     width: 95%;
@@ -173,10 +172,11 @@ footer p {
     }
 
     .profile img {
-        max-width: 35%;
+        max-width: 47%;
         padding-top: 0;
         height: 190px;
         margin-bottom: 48px;
+        padding-right: 32px;
     }
 
     header p {
@@ -192,16 +192,18 @@ footer p {
 
     .col-left {
         float: left;
-        width: 45%;
+        width: 48%;
         padding-right: 0px;
-        margin-right: 0;
+        margin-right: 0px;
+        margin-left: 16px;
     }
 
     .col-right {
         float: right;
-        width: 45%;
+        width: 48%;
         padding-left: 0px;
         margin-left: 0;
+        margin-right: 16px;
     }
 
     img {
@@ -233,23 +235,26 @@ footer p {
 
     .bottom-name768 {
         font-weight: bold;
-        margin-left: 54px;
+        margin-left: 45px;
         margin-right: auto;
-        font-size: 1.2em;
+        font-size: 14px;
     }
 
     .bottom-nav768 li {
         text-transform: uppercase;
         font-weight: bold;
-        padding-left: 24px;
-        padding-right: 48px;
+        padding-left: 32px;
+    }
+
+    .bottom-nav768 li:last-child {
+        padding-right: 45px;
     }
 
     .clearfix {
         content: "";
-        clear: both;
         display: table;
         width: 100%;
+        clear: both;
     }
 }
 
@@ -331,15 +336,18 @@ footer p {
     }
 
     .bottom-name768 {
-        font-size: 1em;
+        font-size: 16px;
+        margin-left: 52px;
     }
 
     .bottom-nav768 ul {
-        margin-right: 36px;
+        margin-right: 12px;
+        line-height: 1.8em;
     }
 
     .bottom-nav768 li {
-        font-size: .8em;
+        font-size: 14px;
         padding-right: 12px;
+        padding-left: 16px;
     }
 }
