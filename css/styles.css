@@ -7,16 +7,17 @@ Copyright JL Hoover
     font-family: 'Lato', sans-serif;
     color: #505050;
     text-decoration: none;
+
 }
 
-    /* =-=-=-= HEADER =-=-=-= */
+    /* =-=-=-=-=-=-=-=-=-=-= HEADER =-=-=-=-=-=-=-=-=-= */
 
 header {
     background-color: #fafafa;
 }
 
 header img {
-    max-width: 60%;
+    max-width: 65%;
     padding-top: 1.5em;
 }
 
@@ -53,7 +54,7 @@ a:hover {
     color: darkorange;
 }
 
-    /* =-=-=-= Portfolio =-=-=-= */
+    /* =-=-=-=-=-=-=-=-=-= Portfolio =-=-=-=-=-=-=-=-=-= */
 
 h2 {
     font-size: .9em;
@@ -63,7 +64,7 @@ h2 {
 }
 
 img {
-    max-width: 85%;
+    max-width: 95%;
     margin-top: 1em;
 }
 
@@ -78,11 +79,9 @@ p {
     font-weight: 100;
     padding-left: 1em;
     padding-right: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
 }
 
-    /* =-=-=-=-= Footer =-=-=-= */
+    /* =-=-=-=-=-=-=-=-=-= Footer =-=-=-=-=-=-=-=-=-= */
 
 footer {
     background-color: #fafafa;
@@ -110,16 +109,18 @@ footer p {
 .ruler {
     border: .5px solid lightgrey;
     width: 90%;
-    margin-top: 4em;
+    margin-top: 6em;
 }
 
 .bottom-name {
+    font-size: .8em;
     float: left;
     padding: 0;
+    background-color: white;
 }
 
 .btt {
-    font-size: .9em;
+    font-size: .8em;
     float: right;
     padding: 0;
     margin-right: 16px
@@ -131,7 +132,7 @@ footer p {
     font-weight: bold;
     text-transform: none;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     list-style: none;
     margin-left: -12px;
 }
@@ -140,11 +141,11 @@ footer p {
     display: none;
 }
 
-/*  =-=-=-=-= MEDIA QUERIES =-=-=-= */
+/* =-=-=-=-=-=-=-=-=-= Media Queries =-=-=-=-=-=-=-=-=-= */
 
 @media (min-width: 768px) {
 
-    /* =-=-=-= HEADER =-=-=-= */
+    /* =-=-=-=-=-=-=-=-=-= Header =-=-=-=-=-=-=-=-=-= */
 
     .top-nav1024 {
         background-color: #505050;
@@ -172,38 +173,34 @@ footer p {
     }
 
     .profile img {
-        max-width: 47%;
+        max-width: 50%;
         padding-top: 0;
+        padding-right: 31px;
         height: 190px;
         margin-bottom: 48px;
-        padding-right: 32px;
     }
 
     header p {
         text-align: left;
-        font-size: 1.15em;
+        font-size: 18px;
     }
 
-    /* =-=-=-= Portfolio =-=-=-= */
+    /* =-=-=-=-=-=-=-=-=-= Portfolio =-=-=-=-=-=-=-=-=-= */
 
     .portfolio-wrapper {
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .col-left {
         float: left;
-        width: 48%;
-        padding-right: 0px;
-        margin-right: 0px;
-        margin-left: 16px;
+        width: 50%;
     }
 
     .col-right {
         float: right;
-        width: 48%;
-        padding-left: 0px;
-        margin-left: 0;
-        margin-right: 16px;
+        width: 50%;
     }
 
     img {
@@ -215,12 +212,19 @@ footer p {
         color: #909090;
     }
 
-    /* =-=-=-=-= Footer =-=-=-= */
+    /* =-=-=-=-=-=-=-=-=-= Footer =-=-=-=-=-=-=-=-=-= */
 
     footer {background-color: #505050;}
 
+    #contact {
+        color: #fafafa;
+    }
+
     footer p {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        font-weight: 100;
+        margin-left: 144px;;
+        margin-right: 144px;
     }
 
     .bottom-nav {
@@ -231,19 +235,26 @@ footer p {
         display: flex;
         justify-content: space-around;
         list-style: none;
+        padding-bottom: 40px;
     }
 
     .bottom-name768 {
+        font-size: 1em;
         font-weight: bold;
-        margin-left: 45px;
+        margin-left: 40px;
         margin-right: auto;
-        font-size: 14px;
+
+        margin-bottom: 0;
+        margin-top: 14px;
     }
 
     .bottom-nav768 li {
+        font-size: .8em;
         text-transform: uppercase;
         font-weight: bold;
-        padding-left: 32px;
+        padding-left: 24px;
+        margin: 0;
+
     }
 
     .bottom-nav768 li:last-child {
@@ -252,15 +263,22 @@ footer p {
 
     .clearfix {
         content: "";
+        clear: both;
         display: table;
         width: 100%;
-        clear: both;
+    }
+
+    div[class*="col-"] {
+        margin: auto 0;
     }
 }
 
+/* =-=-=-=-=-=-=-=-=-=-=-=- 1024 =-=-=-=-=-=-=-=-=-=-= */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ */
 @media (min-width: 1024px) {
-    /* =-=-=-= HEADER =-=-=-=-= 
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+    /* =-=-=-=-=-=-=-=-=-= Header =-=-=-=-=-=-=-=-=-= */
 
     .top-nav1024 {
         display: flex;
@@ -269,8 +287,6 @@ footer p {
     }
 
     .profile img {
-        max-width: 35%;
-        padding-top: 0;
         height: 217px;
         margin-bottom: 48px;
     }
@@ -285,7 +301,7 @@ footer p {
         text-align: left;
     }
 
-    /* =-=-=-= Portfolio =-=-=-= */
+    /* =-=-=-=-=-=-=-=-=-= Portfolio =-=-=-=-=-=-=-=-=-= */
 
     .portfolio-wrapper {
         margin: auto;
@@ -294,30 +310,29 @@ footer p {
     .col-left1024 {
         float: left;
         width: 33%;
-        padding-right: 0px;
-        margin-right: 0;
-        margin-left: 4px;
     }
 
     .col-mid1024 {
         float: left;
         width: 33%;
-        padding-right: 0px;
-        margin-right: 0;
     }
 
     .col-right1024 {
         float: right;
         width: 33%;
-        padding-left: 0px;
-        margin-left: 0;
-        margin-right: 4px;
     }
 
-    /* =-=-=-=-= Footer =-=-=-= */
+    /* =-=-=-=-=-=-=-=-=-= Footer =-=-=-=-=-=-=-=-=-= */
+
+    #contact {
+        font-size: .8em;
+    }
 
     footer p {
         font-size: 1.2em;
+        font-weight: 100;
+        margin-left: 64px;;
+        margin-right: 64px;
     }
 
     .contact-blurb {
@@ -335,19 +350,41 @@ footer p {
         letter-spacing: .5px;
     }
 
+    .bottom-nav768 {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-bottom: 12px;
+    }
+
     .bottom-name768 {
-        font-size: 16px;
-        margin-left: 52px;
+        font-size: .9em;
+        font-weight: bold;
+        margin-left: 48px;
+        margin-bottom: 0;
     }
 
     .bottom-nav768 ul {
-        margin-right: 12px;
-        line-height: 1.8em;
+        margin-right: 36px;
     }
 
     .bottom-nav768 li {
-        font-size: 14px;
+        font-size: .8em;
         padding-right: 12px;
-        padding-left: 16px;
+    }
+
+    .bottom-nav768 li:last-child {
+        margin-right: -24px;
+    }
+
+    .clearfix {
+        content: "";
+        clear: both;
+        display: table;
+        width: 100%;
+    }
+
+    div[class*="col-"] {
+        margin: auto 0;
     }
 }

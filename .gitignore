@@ -77,3 +77,5 @@ typings/
 .DS_Store
 project-2.code-workspace
 css/styles.css.bak.css
+css/styles copy.css
+css/broken.css
